@@ -73,13 +73,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🤖Hallo {}, nama saya adalah {}! 
-Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi
+🤖Hai {}, nama saya adalah {}! 
+Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi!
 
-➕ Tambahkan saya ke group mu dan jadikan saya admin!!
-👤 Bot ini dibuat oleh @ZendYNS
+🇮🇩 Tambahkan saya ke groupmu,dan jadikan saya admin!
+👤 Bot ini dibuat oleh master saya @PacarFerdilla
 
-💻Anda dapat menemukan daftar perintah yang tersedia dengan /help.
+👻kamu dapat menemukan daftar perintah saya dengan command /help.
 """
 
 HELP_STRINGS = """
@@ -103,7 +103,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://telegra.ph/file/d34cedd8a6a83d546fd52.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/aa326a893c3debf02ae9b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Tambahkan TheGroupAssistant ➕",
+                                text="➕ Tambah saya ke groupmu➕",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -233,7 +233,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="📢 Group Officiall 📢",
+                                text="👻Group Official👻",
                                 url=f"https://t.me/Cari_Teman_Online_Group",
                             ),
                         ],
@@ -245,7 +245,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🤖 Sumber Bot 🤖",
+                                text="🤖 Sumber deploy bot🤖",
                                 url="https://github.com/yunuszenduserbot/AstrakoBot",
                             )
                         ],
