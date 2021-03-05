@@ -73,18 +73,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
-"""
+🤖Hai{},nama saya adalah {}! 
+saya bot modular yang di rancang untuk membantu kinerja groupmu lebih mudah dan rapih!
+
+🇮🇩 saya di buat oleh master saya saat ini @PacarFerdilla
+➕ Jadikan saya admin,karna saya yang akan mengurus groupmu!!!
+
+📢Jika kamu tidak tahu apa saja yang saya bantu,kamu bisa *command* /help
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hai kamu ! Nama saya *{}*
+Ini beberapa modul yang bisa saya bantu untuk groupmu
+dalam merancang suatu aturan atau pesan welcome dan yang lain menariknya!
 
-*Main* commands available:
+*pesan* perintah tersedia:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
@@ -100,7 +102,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/aa326a893c3debf02ae9b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
@@ -222,7 +224,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
+                                text="➕Tambah saya ke groupmu➕",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,23 +232,23 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
+                                text="🤖Panduan bot🤖",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                text="📣Group Chat",
+                                url="https://t.me/Cari_Teman_Online_Group",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting started guide",
+                                text="🤖Panduan bot🤖",
                                 url="https://t.me/OnePunchUpdates/29",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Source code",
+                                text="🗄Deploy bot ini",
                                 url="https://github.com/AnimeKaizoku/SaitamaRobot",
                             )
                         ],
