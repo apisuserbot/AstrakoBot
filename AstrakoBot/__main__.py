@@ -73,18 +73,21 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a modular group management bot.
+🤖Hallo {}, nama saya adalah {}! 
+Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi
 
-You can find my list of available commands with /help.
+➕ Tambahkan saya ke group mu dan jadikan saya admin!!
+👤 Bot ini dibuat oleh @ZendYNS
+
+💻Anda dapat menemukan daftar perintah yang tersedia dengan /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot and help admins manage their groups. Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey kamu! Nama saya *{}*.
+Saya bot manajemen grup modular dan membantu admin mengelola grup mereka.
+Lihatlah yang berikut ini untuk mendapatkan gambaran tentang beberapa hal yang dapat saya bantu.
 
-*Main* commands available:
+*Main* Perintah Utama tersedia:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
@@ -222,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="➕ Tambahkan TheGroupAssistant ➕",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,19 +233,19 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                                text="📢 Group Officiall 📢",
+                                url=f"https://t.me/Cari_Teman_Online_Group",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Getting started guide",
+                                text="💻 Klik Untuk Panduan 💻",
                                 url="https://t.me/OnePunchUpdates/29",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Source code",
+                                text="🤖 Sumber Bot 🤖",
                                 url="https://github.com/Astrako/AstrakoBot",
                             )
                         ],
