@@ -73,18 +73,22 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a modular group management bot.
+😼Hai{}, nama saya adalah {}! 
+Saya bot manager yang membantu kinerja groupmu menjadi lebih baik! 
 
-You can find my list of available commands with /help.
+➕Tambahkan saya ke groupmu,dan jadikan saya admin!
+👾my master @PacarFerdilla
+
+❗Jika kamu ingin tahu module saya ketik command /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot and help admins manage their groups. Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey kamu! Nama saya *{}*.
+Saya bot modular yang di rancang untuk membantu para admin group mereka!
 
-*Main* commands available:
+Ini beberapa isi untuk module yang bisa saya bantu
+
+*Main* perintah tersedia:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
@@ -100,7 +104,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://i.imgur.com/1oah5E2.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/67c943477299c90126062.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
@@ -222,7 +226,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="🔥Tambah saya ke groupmu🔥",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,20 +234,20 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                                text="📣Support group",
+                                url=f"https://t.me/Cari_Teman_Online_Group",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Getting started guide",
+                                text="👨‍💻Panduan👨‍💻",
                                 url="https://t.me/OnePunchUpdates/29",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Source code",
-                                url="https://github.com/Astrako/AstrakoBot",
+                                text="👾Deploy bot👾",
+                                url="https://github.com/apisuserbot/AstrakoBot",
                             )
                         ],
                     ]
