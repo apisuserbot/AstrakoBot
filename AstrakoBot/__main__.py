@@ -76,6 +76,7 @@ PM_START_TEXT = """
 🤖Hallo {}, nama saya adalah {}! 
 Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi
 
+Ini group asisten yah!
 ➕ Tambahkan saya ke group mu dan jadikan saya admin!!
 👤 Bot ini dibuat oleh @ZendYNS
 
