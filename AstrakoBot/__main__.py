@@ -73,14 +73,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🤖Hai {}, nama saya adalah {}! 
-Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi!
+😼Hai {}, nama saya adalah {}! 
+senang saya bisa bertemu dengan anda yah!
 
-🇮🇩 Tambahkan saya ke groupmu,dan jadikan saya admin!
-👤 Bot ini dibuat oleh master saya @PacarFerdilla
+➕Anda dapat menambahkan saya ke group,untuk membantu kinerja group anda lebih baik lagi!
+Jika ada masalah bisa tanyakan master saya ini 👨‍💻 @PacarFerdilla 👨‍💻
 
-👻kamu dapat menemukan daftar perintah saya dengan command /help.
+Anda dapat menemukan beberapa module yang bisa anda temukan dengan command /help.
 """
+━━━━━━━━━━━━━━━━━━━━━
+Jangan lupa melihat tombol url dibawah ini yah😊
 
 HELP_STRINGS = """
 Hey kamu! Nama saya *{}*.
@@ -103,7 +105,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://telegra.ph/file/aa326a893c3debf02ae9b.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/67c943477299c90126062.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
@@ -225,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Tambah saya ke groupmu➕",
+                                text="➕Tambah saya ke group➕",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -233,13 +235,13 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="👻Group Official👻",
+                                text="📣Group Chat Official",
                                 url=f"https://t.me/Cari_Teman_Online_Group",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="💻 Klik Untuk Panduan 💻",
+                                text="💻 Panduan 💻",
                                 url="https://t.me/OnePunchUpdates/29",
                             )
                         ],
