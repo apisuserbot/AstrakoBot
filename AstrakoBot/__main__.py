@@ -260,7 +260,9 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [    
-                             InlineKeyboardButton(text="🐳 Language", callback_data="main_setlang",
+                             InlineKeyboardButton
+                                 text="🐳 Language", 
+                                Url="callback_data="main_setlang",
                                          
                             ),
                         )
