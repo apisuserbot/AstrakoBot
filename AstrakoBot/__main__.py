@@ -77,7 +77,7 @@ Hai {}, Nama Saya {}!
 Saya adalah bot management modular,yang di gunakan untuk membantu kinerja groupmu menjadi lebih baik!
 
 Saya bersumber dari github dan beberapa bot modular terbaik di telegram,gunakan saya sebaik mungkin!
-🤖Saya di buat oleh master (Apis🇮🇩)[t.me/PacarFerdilla]
+🤖Saya di buat oleh master [Apis🇮🇩](t.me/PacarFerdilla)
 Terimakasih master telah membuat saya untuk membantu para kinerja admin group mereka!
 
 🐳Tambahkan saya ke gropmu + jadikan saya admin!
