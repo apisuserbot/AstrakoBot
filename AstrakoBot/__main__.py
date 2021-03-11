@@ -80,7 +80,7 @@ Saya bersumber dari github dan beberapa bot modular terbaik di telegram,gunakan 
 🤖Saya di buat oleh master [Apis🇮🇩](t.me/PacarFerdilla)
 Terimakasih master telah membuat saya untuk membantu para kinerja admin group mereka!
 
-🐳Tambahkan saya ke gropmu + jadikan saya admin!
+🐳Tambahkan saya ke groupmu + jadikan saya admin!
 Saya yang akan membantu dan mengurus kinerja groupmu!
 
 🔍 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
@@ -259,9 +259,12 @@ def start(update: Update, context: CallbackContext):
                                 url="https://github.com/apisuserbot/AstrakoBot",
                             )
                         ],
-                    ]
-                ),
-            )
+                        [    
+                             InlineKeyboardButton(text="🐳 Language", callback_data="main_setlang",
+                                         
+                            ),
+                        )
+                    ],
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
