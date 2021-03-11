@@ -73,19 +73,25 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🤖Hallo {}, nama saya adalah {}! 
-Saya adalah bot management modular, saya bisa membantu kinerja grup mu menjadi lebih baik lagi
+Hai {}, Nama Saya {}! 
+Saya adalah bot management modular,yang di gunakan untuk membantu kinerja groupmu menjadi lebih baik!
 
-➕ Tambahkan saya ke group mu dan jadikan saya admin!!
-👤 Bot ini dibuat oleh @ZendYNS
+Saya bersumber dari github dan beberapa bot modular terbaik di telegram,gunakan saya sebaik mungkin!
+🤖Saya di buat oleh master (Apis🇮🇩)[t.me/PacarFerdilla]
+Terimakasih master telah membuat saya untuk membantu para kinerja admin group mereka!
 
-💻Anda dapat menemukan daftar perintah yang tersedia dengan /help.
+🐳Tambahkan saya ke gropmu + jadikan saya admin!
+Saya yang akan membantu dan mengurus kinerja groupmu!
+
+🔍 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
 """
 
 HELP_STRINGS = """
 Hey kamu! Nama saya *{}*.
 Saya bot manajemen grup modular dan membantu admin mengelola grup mereka.
 Lihatlah yang berikut ini untuk mendapatkan gambaran tentang beberapa hal yang dapat saya bantu.
+
+🐳Bisa melihatnya di bawah ini!
 
 *Main* Perintah Utama tersedia:
  • /help: PM's you this message.
@@ -103,7 +109,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://telegra.ph/file/d34cedd8a6a83d546fd52.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/ac6b5caa7df681c2f8de1.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
@@ -222,10 +228,10 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Tambahkan TheGroupAssistant ➕",
+                                text="🐳Tambah Saya Ke Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -233,20 +239,24 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="📢 Group Officiall 📢",
-                                url=f"https://t.me/Cari_Teman_Online_Group",
+                                text="🐳Github Support",
+                                url=f"https://t.me/Github_Support_Channel",
+                            ),
+                            InlineKeyboardButton(
+                                text="🎉Quotes Channel",
+                                url="https://t.me/Quotes_Channel_Official",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="💻 Klik Untuk Panduan 💻",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="🐳Panduan Support",
+                                url="https://t.me/Github_Support_Channel/3",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🤖 Sumber Bot 🤖",
-                                url="https://github.com/yunuszenduserbot/AstrakoBot",
+                                text="🐳Support Master",
+                                url="https://github.com/apisuserbot/AstrakoBot",
                             )
                         ],
                     ]
