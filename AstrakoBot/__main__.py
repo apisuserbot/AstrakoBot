@@ -260,13 +260,17 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [    
-                             InlineKeyboardButton
+                             InlineKeyboardButton(
                                  text="🐳 Language", 
                                 Url="callback_data="main_setlang",
                                          
-                            ),
-                        )
-                    ],
+                            )
+                        ],
+                    ]
+                ),
+            )
+                        
+                   
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
