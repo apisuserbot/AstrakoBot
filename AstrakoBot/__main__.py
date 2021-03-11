@@ -260,8 +260,9 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [    
-                            InlineKeyboardButton(text="🐳 Language", callback_data="main_setlang")
-                                 
+                            InlineKeyboardButton(
+                               text="👻Ghosting👻",
+                               url="https://t.me/cogancecanmasuk",
                             )
                         ],
                     ]
